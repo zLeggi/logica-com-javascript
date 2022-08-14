@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<script>
+
+ function pulaLinha() {
+    document.write("<br>");
+ }
+
+ function mostraNaTela(fraseHTML) {
+    document.write(fraseHTML);
+    pulaLinha();
+ }
+
+ var nomeTime = prompt("Digite o nome do time: ");
+ var vitorias = parseInt(prompt("Digite a quantidade de vitorias que seu time teve: "));
+ var empates = parseInt(prompt ("Digite a quantidade de empates que seu time teve: "));
+
+ var pontos = vitorias * 3 + empates;
+
+ mostraNaTela("O " + nomeTime + " tem " + pontos + " pontos");
+
+ var pontosAnoPassado = parseInt(prompt("Digite os pontos do seu time no ano passado: "))
+
+ if(pontos > pontosAnoPassado) {
+    mostraNaTela("Seu time está melhor que ano passado.")
+ } else if(pontos < pontosAnoPassado) {
+    mostraNaTela("seu time esta pior que ano passado")
+ } else {
+    mostraNaTela("Seu time esta igual ano passado")
+ }
+  
+
+</script>

@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+<script>
+
+ function pulaLinha() {
+    document.write("<br>");
+ }
+
+ function mostraNaTela(fraseHTML) {
+    document.write(fraseHTML);
+    pulaLinha();
+ }
+
+ 
+
+  var numeroAleatorio = Math.round(Math.random() * 2);
+
+  if(numeroAleatorio == 0){
+    numeroAleatorio = 1;
+  }
+
+  var tentativas = 0;
+
+  var chute = parseInt(prompt("Digite seu chute"));
+
+  while(tentativas <= 3){
+
+
+    function tentativasRestantes(tentativa) {
+
+      tentativasRestantes = tentativas - 3;
+      return tentativasRestantes
+ }
+
+    chute = parseInt(prompt("Você errou! Você tem mais " + tentativas + "tentativas"))
+
+    if(chute == numeroAleatorio) {
+      mostraNaTela("Parabéns, você acertou! ")
+      mostraNaTela( "O numero gerado foi: " + numeroAleatorio)
+      break;
+    
+    } else {
+      mostraNaTela("Você errou!");
+    }
+
+    tentativas++;
+
+  }
+mostraNaTela("Fim")
+  
+</script>

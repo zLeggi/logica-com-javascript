@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<input/>
+<button>Compare seu numero com o segredo</button>
+
+<script>
+  
+var segredo = Math.round(Math.random()* 5);
+
+var input = document.querySelector("input");
+  input.focus();
+function compararNumeros() {
+  if(input.value == segredo){
+    alert("Você Acertou")
+  }else {
+    alert("você errou! O numero era: " + segredo);
+  }
+
+  input.value = "";
+  input.focus();
+ 
+} 
+
+
+var button = document.querySelector("button");
+
+button.addEventListener("click", compararNumeros)
+</script>

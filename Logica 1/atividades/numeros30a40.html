@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+<script>
+
+ function pulaLinha() {
+    document.write("<br>");
+ }
+
+ function mostraNaTela(fraseHTML) {
+    document.write(fraseHTML);
+    pulaLinha();
+ }
+
+ var numero = 30;
+
+
+while(numero <= 40) {
+  if(numero == 33 || numero == 37){ numero ++
+  } else{
+  mostraNaTela(numero);
+  numero ++;
+  }
+
+}
+
+mostraNaTela("Deu Certo!")
+</script>

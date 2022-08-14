@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+ }
+
+ function mostraNaTela(fraseHTML) {
+    document.write(fraseHTML);
+    pulaLinha();
+ }
+
+
+    var loginCadastrado = "alura";
+    var senhaCadastrada = "alura321";
+
+    var maxTentativas = 3;
+    var tentativaAtual = 1;
+
+
+    while(tentativaAtual <= maxTentativas) {
+      
+      var loginInformado = prompt("Informe seu login");
+      var senhaInformada = prompt("Informe sua senha");
+
+      if( loginCadastrado == loginInformado && senhaCadastrada == senhaInformada ) {
+
+        var login = "correto";
+        alert("Bem-vindo ao sistema " + loginInformado);
+
+        tentativaAtual = maxTentativas + 1;
+
+    } else if(tentativaAtual < 3){
+
+        alert("Login inválido. Tente novamente");
+
+      } else {
+        alert("Login errado. Por segurança a conta foi bloqueada!")
+      }
+
+        tentativaAtual ++;
+
+      }
+    
+
+    if(login == "correto") {
+      mostraNaTela("BEM VINDO " + loginInformado);
+    } else {
+      mostraNaTela("CONTA BLOQUEADA!!")
+    }
+    
+</script>

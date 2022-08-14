@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+
+ function pulaLinha() {
+    document.write("<br>");
+ }
+
+ function mostraNaTela(fraseHTML) {
+    document.write(fraseHTML);
+    pulaLinha();
+ }
+
+ var numeroAleatorio = Math.round(Math.random() * 5);
+
+var chute = parseInt(prompt("Digite seu chute"));
+
+  if(chute == numeroAleatorio) {
+    mostraNaTela("Parabéns, você acertou! ")
+    mostraNaTela( "O numero gerado foi: " + numeroAleatorio)
+  } else {
+    mostraNaTela("Você errou!")
+    mostraNaTela("O numero gerado foi: " + numeroAleatorio)
+  }
+
+</script>

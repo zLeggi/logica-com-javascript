@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+  function pulaLinha() {
+    document.write("<br>")
+    document.write("<br>")
+  }
+
+  function mostraNaTela(frase) {
+    document.write(frase);
+    pulaLinha();
+  }
+
+  function calcularIMC (peso, altura) {
+    return peso / (altura * altura);  
+  }
+
+  let pesoLeandro = 59;
+  let alturaLeandro = 1.71;
+  
+  var imc = calcularIMC(pesoLeandro, alturaLeandro);
+ 
+  mostraNaTela(imc);
+  
+
+</script>
